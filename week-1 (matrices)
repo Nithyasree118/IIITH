@@ -1,0 +1,93 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMdEH7p52kp4asgwasX9KEh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Nithyasree118/IIITH/blob/main/week-1%20(matrices)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "6BgBpB18TJkq"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "yq7SHHzFdP-f"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Matrix Creation\n",
+        "matrix = [\n",
+        "    [1, 2, 3],\n",
+        "    [4, 5, 6],\n",
+        "    [7, 8, 9]\n",
+        "]\n",
+        "\n",
+        "# Access element at row 1, column 2\n",
+        "print(\"Element at [1][2]:\", matrix[1][2])\n",
+        "\n",
+        "# Transpose the matrix\n",
+        "transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]\n",
+        "print(\"Transposed Matrix:\", transpose)\n",
+        "\n",
+        "# Add two matrices\n",
+        "matrix2 = [\n",
+        "    [9, 8, 7],\n",
+        "    [6, 5, 4],\n",
+        "    [3, 2, 1]\n",
+        "]\n",
+        "\n",
+        "result = [[matrix[i][j] + matrix2[i][j] for j in range(len(matrix[0]))] for i in range(len(matrix))]\n",
+        "print(\"Sum of matrices:\", result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YjafNym3ilH3",
+        "outputId": "ea3a618f-50f4-4d9c-e5eb-9a57a8b72355"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Element at [1][2]: 6\n",
+            "Transposed Matrix: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]\n",
+            "Sum of matrices: [[10, 10, 10], [10, 10, 10], [10, 10, 10]]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
